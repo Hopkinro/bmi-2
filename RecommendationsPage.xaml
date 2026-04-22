@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculatorNavigationApp.Pages.RecommendationsPage"
+             Title="Recommendations"
+             BackgroundColor="#F7F7F7">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+
+            <Label Text="Health Recommendations"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="SummaryLabel"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+
+            <Frame Padding="16" CornerRadius="18" BackgroundColor="White" HasShadow="True">
+                <Label x:Name="RecommendationLabel"
+                       FontSize="18"
+                       LineBreakMode="WordWrap" />
+            </Frame>
+
+            <Button Text="Back to BMI Result"
+                    HeightRequest="55"
+                    BackgroundColor="#512BD4"
+                    TextColor="White"
+                    Clicked="OnBackToResultClicked" />
+
+            <Button Text="Back to Input Page"
+                    HeightRequest="55"
+                    BackgroundColor="#D9D9D9"
+                    TextColor="Black"
+                    Clicked="OnBackToInputClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
